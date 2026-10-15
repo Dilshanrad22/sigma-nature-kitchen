@@ -55,3 +55,11 @@ export const dishImages = {
     "/signature dishes on the table/Papadam and Fried Chilli.jpeg"
   ),
 };
+
+export const ingredientImages = {
+  curryLeavesAndHerbs: encodeURI("/from soil to curry port/Curry leaves & herbs.jpeg"),
+  chilliesAndVegetables: encodeURI(
+    "/from soil to curry port/Chillies & green vegetables.jpeg"
+  ),
+  riceSpicesAndCoconut: encodeURI("/from soil to curry port/rice spices and cocount.jpeg"),
+};

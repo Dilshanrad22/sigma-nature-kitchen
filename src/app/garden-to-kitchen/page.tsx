@@ -1,12 +1,11 @@
 import type { Metadata } from "next";
-import { Flame, Leaf, Sprout } from "lucide-react";
 import PageHero from "@/components/PageHero";
 import Container from "@/components/Container";
 import SectionHeading from "@/components/SectionHeading";
 import Reveal from "@/components/Reveal";
 import PhotoPlaceholder from "@/components/PhotoPlaceholder";
 import FinalCta from "@/components/home/FinalCta";
-import { bannerImages } from "@/lib/images";
+import { bannerImages, ingredientImages } from "@/lib/images";
 
 export const metadata: Metadata = {
   title: "Garden to Kitchen | Sigma House Nature Kitchen",
@@ -18,17 +17,17 @@ const ingredients = [
   {
     name: "Curry leaves & herbs",
     source: "Grown in the garden",
-    icon: Sprout,
+    image: ingredientImages.curryLeavesAndHerbs,
   },
   {
     name: "Chillies & green vegetables",
     source: "Grown in the garden",
-    icon: Leaf,
+    image: ingredientImages.chilliesAndVegetables,
   },
   {
     name: "Rice, spices & coconut",
     source: "Sourced from the village",
-    icon: Flame,
+    image: ingredientImages.riceSpicesAndCoconut,
   },
 ];
 
@@ -55,7 +54,7 @@ export default function GardenToKitchenPage() {
                 <div className="rounded-2xl border border-ivory/10 bg-white/5 p-6 text-center shadow-sm">
                   <PhotoPlaceholder
                     label={item.name}
-                    icon={item.icon}
+                    image={item.image}
                     tone={i === 1 ? "terracotta" : "gold"}
                     className="aspect-square"
                   />

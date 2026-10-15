@@ -170,12 +170,6 @@ export const dishes = [
     allergens: "Contains lentils",
     image: dishImages.papadamAndChilli,
   },
-  {
-    name: "Beetroot Curry",
-    description: "A bright, mildly sweet curry of grated beetroot tempered with mustard seed and curry leaves.",
-    tags: ["Vegan", "Mild"],
-    allergens: "No common allergens",
-  },
 ];
 
 export const faqs = [

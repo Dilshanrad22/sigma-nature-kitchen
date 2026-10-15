@@ -25,10 +25,6 @@ export const heroSlides = [
   bannerImages.platedFeast,
 ];
 
-// Beetroot Curry's uploaded photo ("bitroot.jpeg") actually shows egg
-// hoppers, not beetroot curry   likely a mislabeled upload. Not wired in
-// anywhere; replace with a correct photo and add it to dishImages below.
-
 export const galleryImages = {
   welcomeKingCoconut: encodeURI("/gallery/wellcome_king coconut.jpeg"),
   meetingYourHost: encodeURI("/gallery/meet your host.jpeg"),

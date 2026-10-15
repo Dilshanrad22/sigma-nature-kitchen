@@ -6,11 +6,15 @@ import Reveal from "@/components/Reveal";
 import Button from "@/components/Button";
 import { whatsappLink } from "@/lib/content";
 import { bannerImages } from "@/lib/images";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Reviews | Sigma House Nature Kitchen",
-  description: "Guest reviews from the Sigma House Nature Kitchen cooking experience.",
-};
+export const metadata: Metadata = pageMetadata({
+  title: "Guest Reviews",
+  description:
+    "Guest reviews of the Sigma House Nature Kitchen Sri Lankan cooking experience, linked to their original source.",
+  path: "/reviews",
+  noIndex: true,
+});
 
 // Platform cards   wire up to real profiles and real ratings once the
 // business has them. Do not fill in numbers that aren't verified.

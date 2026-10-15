@@ -6,12 +6,15 @@ import Reveal from "@/components/Reveal";
 import PhotoPlaceholder from "@/components/PhotoPlaceholder";
 import FinalCta from "@/components/home/FinalCta";
 import { bannerImages, ingredientImages } from "@/lib/images";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Garden to Kitchen | Sigma House Nature Kitchen",
+export const metadata: Metadata = pageMetadata({
+  title: "Garden-to-Kitchen Sri Lankan Spices & Ingredients",
   description:
-    "Curry leaves, chillies, and herbs grown steps from the kitchen   see what comes from the garden and what's sourced from the village.",
-};
+    "Curry leaves, chillies and herbs grown steps from the kitchen. See which ingredients come from the Sigma House garden and which are sourced from the village.",
+  path: "/garden-to-kitchen",
+  extraKeywords: ["Sri Lankan garden ingredients", "curry leaves", "spice garden Sri Lanka"],
+});
 
 const ingredients = [
   {

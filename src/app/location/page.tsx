@@ -8,11 +8,15 @@ import Button from "@/components/Button";
 import EnquiryForm from "@/components/EnquiryForm";
 import { business, whatsappLink } from "@/lib/content";
 import { bannerImages } from "@/lib/images";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Location & Book | Sigma House Nature Kitchen",
-  description: "Find us and reserve your Sri Lankan cooking experience.",
-};
+export const metadata: Metadata = pageMetadata({
+  title: "Book a Cooking Class in Kananke, Imaduwa",
+  description:
+    "Find Sigma House Nature Kitchen in Kananke, Imaduwa, down south near Galle, Weligama and Ahangama. Reserve your Sri Lankan cooking class by WhatsApp or enquiry form.",
+  path: "/location",
+  extraKeywords: ["book cooking class Sri Lanka", "Kananke Imaduwa"],
+});
 
 export default function LocationPage() {
   return (

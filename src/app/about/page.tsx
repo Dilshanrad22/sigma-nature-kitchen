@@ -8,12 +8,15 @@ import Button from "@/components/Button";
 import FinalCta from "@/components/home/FinalCta";
 import { heroCopy, whatsappLink } from "@/lib/content";
 import { bannerImages, hostImages } from "@/lib/images";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "About | Sigma House Nature Kitchen",
+export const metadata: Metadata = pageMetadata({
+  title: "About Our Village Home Kitchen in Sri Lanka",
   description:
-    "The story behind Sigma House Nature Kitchen   a small, hands-on Sri Lankan cooking experience hosted at home, not at a tourist venue.",
-};
+    "The story behind Sigma House Nature Kitchen: a hands-on cooking class hosted by a local family in their village home in Kananke, near Galle, not a tourist venue.",
+  path: "/about",
+  extraKeywords: ["Sri Lankan home cooking", "local host Sri Lanka"],
+});
 
 const highlights = [
   { title: "Open-fire cooking", image: hostImages.openFireCooking },

@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Hero from "@/components/home/Hero";
 import Promises from "@/components/home/Promises";
 import MeetHost from "@/components/home/MeetHost";
@@ -11,6 +12,14 @@ import GuestReviews from "@/components/home/GuestReviews";
 import PracticalDetails from "@/components/home/PracticalDetails";
 import FaqPreview from "@/components/home/FaqPreview";
 import FinalCta from "@/components/home/FinalCta";
+import { defaultDescription, pageMetadata } from "@/lib/seo";
+
+export const metadata: Metadata = pageMetadata({
+  title: "Authentic Sri Lankan Cooking Class near Galle | Sigma House Nature Kitchen",
+  description: defaultDescription,
+  path: "/",
+  absoluteTitle: true,
+});
 
 export default function Home() {
   return (

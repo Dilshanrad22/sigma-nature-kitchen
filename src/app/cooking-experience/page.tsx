@@ -5,12 +5,15 @@ import JourneyTimeline from "@/components/home/JourneyTimeline";
 import Inclusions from "@/components/home/Inclusions";
 import PracticalDetails from "@/components/home/PracticalDetails";
 import FinalCta from "@/components/home/FinalCta";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Cooking Experience | Sigma House Nature Kitchen",
+export const metadata: Metadata = pageMetadata({
+  title: "Sri Lankan Village Cooking Experience",
   description:
-    "A hands-on Sri Lankan village cooking experience: welcome drink, spice introduction, cooking over fire, and a shared meal.",
-};
+    "Cook authentic Sri Lankan food with a local family: king coconut welcome, spice introduction, rice and curry cooked over an open fire and a shared meal. A real taste of village life and Sri Lanka food traditions.",
+  path: "/cooking-experience",
+  extraKeywords: ["Sri Lankan cooking lesson", "rice and curry cooking class"],
+});
 
 export default function CookingExperiencePage() {
   return (

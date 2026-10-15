@@ -3,11 +3,14 @@ import PageHero from "@/components/PageHero";
 import Container from "@/components/Container";
 import Reveal from "@/components/Reveal";
 import { policies } from "@/lib/content";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Policies | Sigma House Nature Kitchen",
-  description: "Cancellation, dietary, children, and photography policies for the Sigma House Nature Kitchen cooking experience.",
-};
+export const metadata: Metadata = pageMetadata({
+  title: "Booking & Cancellation Policies",
+  description:
+    "Cancellation, late arrival, dietary and allergen, children and photography policies for the Sigma House Nature Kitchen cooking experience.",
+  path: "/policies",
+});
 
 const sections = [
   { title: "Cancellation & Refunds", body: policies.cancellation },

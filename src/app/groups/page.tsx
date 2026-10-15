@@ -7,12 +7,15 @@ import Reveal from "@/components/Reveal";
 import Button from "@/components/Button";
 import { whatsappLink } from "@/lib/content";
 import { bannerImages } from "@/lib/images";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "For Groups & Private Classes | Sigma House Nature Kitchen",
+export const metadata: Metadata = pageMetadata({
+  title: "Private Sri Lankan Cooking Classes for Groups & Families",
   description:
-    "Private cooking classes for couples, families, small groups, and travel agents   tailored to your group's size and interests.",
-};
+    "Private Sri Lankan cooking classes for couples, families, small groups of up to 8 guests and travel agents, tailored to your group's size and interests.",
+  path: "/groups",
+  extraKeywords: ["private cooking class Sri Lanka", "group cooking class Sri Lanka"],
+});
 
 const groupTypes = [
   {

@@ -7,12 +7,15 @@ import PhotoPlaceholder from "@/components/PhotoPlaceholder";
 import FinalCta from "@/components/home/FinalCta";
 import { dishes } from "@/lib/content";
 import { bannerImages } from "@/lib/images";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Menu & Dishes | Sigma House Nature Kitchen",
+export const metadata: Metadata = pageMetadata({
+  title: "Traditional Sri Lankan Dishes You'll Cook",
   description:
-    "Seasonal Sri Lankan dishes you'll cook by hand   with vegetarian, vegan, and spice-level guidance.",
-};
+    "Seasonal Sri Lankan dishes you'll cook by hand: pol sambol, dhal curry, jackfruit curry, egg hoppers and papadam, with vegetarian, vegan and spice-level guidance.",
+  path: "/menu",
+  extraKeywords: ["Sri Lankan dishes", "Sri Lankan rice and curry"],
+});
 
 export default function MenuPage() {
   return (

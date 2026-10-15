@@ -3,11 +3,15 @@ import PageHero from "@/components/PageHero";
 import Container from "@/components/Container";
 import GalleryFilter, { type GalleryItem } from "@/components/GalleryFilter";
 import { bannerImages, galleryImages } from "@/lib/images";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Gallery | Sigma House Nature Kitchen",
-  description: "Moments from the Sigma House Nature Kitchen cooking experience.",
-};
+export const metadata: Metadata = pageMetadata({
+  title: "Photos of Our Sri Lankan Cooking Class",
+  description:
+    "Real photos from Sigma House Nature Kitchen: spice introductions, cooking over the fire, garden herbs and the rice and curry spread guests make together.",
+  path: "/gallery",
+  extraKeywords: ["Sri Lankan cooking class photos"],
+});
 
 const galleryItems: GalleryItem[] = [
   { label: "Welcome king coconut", icon: "Sparkles", tone: "gold", category: "Guests", image: galleryImages.welcomeKingCoconut },

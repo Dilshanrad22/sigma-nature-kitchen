@@ -8,8 +8,9 @@ import { inclusions, pricingTiers, whatsappLink } from "@/lib/content";
 
 export default function Inclusions() {
   return (
-    <section className="grain-texture bg-charcoal py-20 text-ivory sm:py-28">
-      <Container>
+    <section className="grain-texture relative overflow-hidden bg-gradient-to-b from-charcoal via-surface to-charcoal py-20 text-ivory sm:py-28">
+      <div className="pointer-events-none absolute right-0 top-0 h-96 w-96 translate-x-1/3 -translate-y-1/3 rounded-full bg-terracotta/10 blur-3xl" />
+      <Container className="relative">
         <SectionHeading
           eyebrow="What's included"
           title="Everything you need for a full cooking day"

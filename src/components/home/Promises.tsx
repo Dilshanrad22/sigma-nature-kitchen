@@ -7,8 +7,10 @@ const icons: Record<string, LucideIcon> = { ChefHat, BookOpen, Utensils };
 
 export default function Promises() {
   return (
-    <section className="py-20 sm:py-28">
-      <Container>
+    <section className="relative overflow-hidden py-20 sm:py-28">
+      <div className="pointer-events-none absolute left-1/4 top-0 h-72 w-72 -translate-y-1/2 rounded-full bg-terracotta/10 blur-3xl" />
+      <div className="pointer-events-none absolute right-1/4 bottom-0 h-72 w-72 translate-y-1/2 rounded-full bg-gold/10 blur-3xl" />
+      <Container className="relative">
         <div className="grid gap-6 sm:grid-cols-3">
           {promises.map((item, i) => {
             const Icon = icons[item.icon];

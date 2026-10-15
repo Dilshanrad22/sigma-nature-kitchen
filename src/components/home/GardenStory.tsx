@@ -6,7 +6,7 @@ import Button from "../Button";
 
 export default function GardenStory() {
   return (
-    <section className="bg-gold/10 py-20 sm:py-28">
+    <section className="bg-gradient-to-br from-surface-warm via-charcoal to-surface-warm py-20 sm:py-28">
       <Container className="grid gap-12 lg:grid-cols-2 lg:items-center">
         <Reveal className="order-2 lg:order-1">
           <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-terracotta">

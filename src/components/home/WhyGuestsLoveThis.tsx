@@ -16,14 +16,15 @@ const reasons = [
 
 export default function WhyGuestsLoveThis() {
   return (
-    <section className="bg-charcoal py-20 sm:py-28">
-      <Container>
+    <section className="relative overflow-hidden bg-charcoal py-20 sm:py-28">
+      <div className="pointer-events-none absolute left-0 top-1/3 h-80 w-80 -translate-x-1/2 rounded-full bg-forest-light/15 blur-3xl" />
+      <Container className="relative">
         <SectionHeading eyebrow="Why guests choose us" title="What makes this experience different" />
 
         <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {reasons.map((reason, i) => (
             <Reveal key={reason.title} delay={i * 0.06}>
-              <div className="flex h-full gap-3 rounded-2xl border border-ivory/10 bg-white/5 p-5">
+              <div className="flex h-full gap-3 rounded-2xl border border-ivory/10 bg-white/5 p-5 transition-colors hover:border-gold/25">
                 <Check size={20} className="mt-0.5 shrink-0 text-gold-light" />
                 <div>
                   <p className="font-semibold text-ivory">{reason.title}</p>

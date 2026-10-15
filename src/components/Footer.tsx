@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Mail, MapPin, Phone } from "lucide-react";
 import Container from "./Container";
 import { business, nav, secondaryPages } from "@/lib/content";
@@ -9,6 +10,9 @@ export default function Footer() {
     <footer className="grain-texture bg-forest text-ivory">
       <Container className="grid gap-10 py-14 sm:grid-cols-2 lg:grid-cols-4">
         <div>
+          <div className="relative mb-3 h-14 w-14 overflow-hidden rounded-full border border-gold/30">
+            <Image src="/logo.jpeg" alt="Sigma House Nature Kitchen" fill sizes="56px" className="object-cover" />
+          </div>
           <p className="font-display text-2xl">Sigma House</p>
           <p className="text-sm text-gold-light">Nature Kitchen</p>
           <p className="mt-4 max-w-xs text-sm text-ivory/75">

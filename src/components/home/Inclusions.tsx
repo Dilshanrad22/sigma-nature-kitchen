@@ -4,7 +4,7 @@ import Container from "../Container";
 import SectionHeading from "../SectionHeading";
 import Reveal from "../Reveal";
 import Button from "../Button";
-import { inclusions, pricingTiers, whatsappLink } from "@/lib/content";
+import { inclusions, pricingNote, pricingTiers, whatsappLink } from "@/lib/content";
 import { bannerImages } from "@/lib/images";
 
 export default function Inclusions() {
@@ -64,8 +64,8 @@ export default function Inclusions() {
               </Reveal>
             ))}
           </div>
-          <p className="mt-6 text-center text-xs text-ivory/50">
-            Example rates — confirm current pricing before publishing.
+          <p className="mt-6 text-center text-sm text-ivory/60">
+            {pricingNote}
           </p>
           <div className="mt-8 flex justify-center">
             <Button

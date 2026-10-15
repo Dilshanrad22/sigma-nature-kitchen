@@ -1,8 +1,8 @@
-import { UserRound } from "lucide-react";
 import Container from "../Container";
 import Reveal from "../Reveal";
 import PhotoPlaceholder from "../PhotoPlaceholder";
 import Button from "../Button";
+import { hostImages } from "@/lib/images";
 
 export default function MeetHost() {
   return (
@@ -10,9 +10,8 @@ export default function MeetHost() {
       <Container className="grid gap-12 lg:grid-cols-2 lg:items-center">
         <Reveal>
           <PhotoPlaceholder
-            label="Portrait of your host in the kitchen"
-            icon={UserRound}
-            tone="forest"
+            label="Your host with recent guests"
+            image={hostImages.hostWithGuests}
             className="aspect-[4/5] lg:aspect-[4/3]"
           />
         </Reveal>

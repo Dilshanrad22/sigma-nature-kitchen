@@ -24,6 +24,7 @@ export default function SignatureDishes() {
                   label={dish.name}
                   icon={Utensils}
                   tone={i % 2 === 0 ? "terracotta" : "forest"}
+                  image={dish.image}
                   className="aspect-square w-28 shrink-0 sm:w-32"
                 />
                 <div>

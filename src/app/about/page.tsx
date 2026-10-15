@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { Flame, Leaf, Sprout, UserRound, Users2 } from "lucide-react";
 import PageHero from "@/components/PageHero";
 import Container from "@/components/Container";
 import Reveal from "@/components/Reveal";
@@ -8,7 +7,7 @@ import PhotoTile from "@/components/PhotoTile";
 import Button from "@/components/Button";
 import FinalCta from "@/components/home/FinalCta";
 import { heroCopy, whatsappLink } from "@/lib/content";
-import { bannerImages } from "@/lib/images";
+import { bannerImages, hostImages } from "@/lib/images";
 
 export const metadata: Metadata = {
   title: "About | Sigma House Nature Kitchen",
@@ -17,10 +16,10 @@ export const metadata: Metadata = {
 };
 
 const highlights = [
-  { title: "Open-fire cooking", icon: Flame, tone: "terracotta" as const },
-  { title: "Garden spices", icon: Sprout, tone: "gold" as const },
-  { title: "Intimate groups", icon: Users2, tone: "forest" as const },
-  { title: "Take-home recipes", icon: Leaf, tone: "gold" as const },
+  { title: "Open-fire cooking", image: hostImages.openFireCooking },
+  { title: "Garden spices", image: hostImages.gardenSpices },
+  { title: "Intimate groups", image: hostImages.intimateGroup },
+  { title: "Take-home recipes", image: hostImages.takeHomeRecipeCard },
 ];
 
 export default function AboutPage() {
@@ -65,9 +64,8 @@ export default function AboutPage() {
 
           <Reveal delay={0.1}>
             <PhotoPlaceholder
-              label="Portrait of your host in the kitchen"
-              icon={UserRound}
-              tone="forest"
+              label="Your host with recent guests"
+              image={hostImages.hostWithGuests}
               className="aspect-[4/3]"
             />
             <p className="mt-3 text-center text-xs font-semibold uppercase tracking-[0.2em] text-gold-light">
@@ -96,7 +94,7 @@ export default function AboutPage() {
           <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {highlights.map((item, i) => (
               <Reveal key={item.title} delay={i * 0.06}>
-                <PhotoTile title={item.title} icon={item.icon} tone={item.tone} />
+                <PhotoTile {...item} />
               </Reveal>
             ))}
           </div>

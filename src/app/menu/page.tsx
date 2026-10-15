@@ -44,6 +44,7 @@ export default function MenuPage() {
                     label={dish.name}
                     icon={Utensils}
                     tone={i % 2 === 0 ? "terracotta" : "forest"}
+                    image={dish.image}
                     className="aspect-[4/3]"
                   />
                   <h3 className="mt-4 font-display text-xl text-ivory">

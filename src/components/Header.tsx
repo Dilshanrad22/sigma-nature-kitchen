@@ -1,10 +1,11 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { CookingPot, MapPin, Menu, X } from "lucide-react";
+import { MapPin, Menu, X } from "lucide-react";
 import Container from "./Container";
 import { business, nav, whatsappLink } from "@/lib/content";
 import { FacebookIcon, InstagramIcon } from "./icons/SocialIcons";
@@ -33,8 +34,8 @@ export default function Header() {
     >
       <Container className="flex h-[4.5rem] items-center justify-between py-3">
         <Link href="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
-          <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-gold/40 bg-forest text-gold-light">
-            <CookingPot size={18} strokeWidth={1.75} />
+          <span className="relative h-11 w-11 shrink-0 overflow-hidden rounded-full border border-gold/40">
+            <Image src="/logo.jpeg" alt="Sigma House Nature Kitchen" fill sizes="44px" className="object-cover" />
           </span>
           <span className="flex flex-col leading-tight">
             <span className="font-display text-xl text-ivory sm:text-2xl">

@@ -1,9 +1,8 @@
-import { ChefHat } from "lucide-react";
 import Container from "../Container";
 import Reveal from "../Reveal";
 import PhotoTile from "../PhotoTile";
 import Button from "../Button";
-import { bannerImages } from "@/lib/images";
+import { bannerImages, hostImages } from "@/lib/images";
 
 const tiles = [
   {
@@ -12,15 +11,14 @@ const tiles = [
     image: bannerImages.cookingTogether,
   },
   {
-    title: "The kitchen pavilion",
-    subtitle: "Open-air, garden view",
-    image: bannerImages.kitchenPavilion,
+    title: "Cooking over fire",
+    subtitle: "The clay hearth",
+    image: hostImages.openFireCooking,
   },
   {
     title: "Spice table",
     subtitle: "Smell, touch, taste",
-    icon: ChefHat,
-    tone: "terracotta" as const,
+    image: hostImages.gardenSpices,
   },
   {
     title: "Shared meal",

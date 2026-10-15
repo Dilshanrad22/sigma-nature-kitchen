@@ -5,24 +5,27 @@
 // (see master plan §13 "Facts to confirm before development").
 // ---------------------------------------------------------------------------
 
+import { dishImages } from "./images";
+
 export const business = {
   name: "Sigma House Nature Kitchen",
   tagline: "Taste Sri Lanka. Live the Village.",
-  phoneDisplay: "+94 77 000 0000", // PLACEHOLDER
-  whatsappNumber: "94770000000", // PLACEHOLDER — digits only, no +
-  email: "hello@sigmahousesrilanka.com", // PLACEHOLDER
-  address: "Sigma House, Village Road, Sri Lanka", // PLACEHOLDER
-  mapsUrl: "https://maps.google.com/?q=Sigma+House+Sri+Lanka", // PLACEHOLDER
-  instagram: "https://instagram.com/sigmahousesrilanka", // PLACEHOLDER
-  facebook: "https://facebook.com/sigmahousesrilanka", // PLACEHOLDER
+  phoneDisplay: "+94 76 318 3081",
+  whatsappNumber: "94763183081", // digits only, no +
+  email: "hasithadhananjaya2020@gmail.com",
+  address: "Wahala Kananke, Udakaduruwaka Watta, Imaduwa 80130, Sri Lanka",
+  mapsUrl:
+    "https://maps.google.com?q=Sigma%20House%20Nature%20Kitchen,%20Wahala%20Kananke,%20Udakaduruwaka%20Watta,%20Imaduwa%2080130&ftid=0x3ae16b018dd9efb7:0x62fee691c6840a61&entry=gps&shh=CAE&lucs=,94297699,94231188,94280568,100821559,47071704,94218641,94282134,100835694,94286869,100820247,100822504,100838877,121816461&g_st=ic",
+  instagram: "https://www.instagram.com/sigmahouse.naturekitchen",
+  facebook: "https://www.facebook.com/profile.php?id=61594241107827",
   sisterSiteUrl: "https://sri-lanka-one.vercel.app/",
   sisterSiteName: "Sigma House Sri Lanka",
   schedule: {
     display: "Saturdays & Sundays, 10:00 a.m. – 12:00 p.m. (by reservation)",
     note: "Sessions run by reservation — confirm your date before you travel.",
   },
-  openingHours: "By reservation — Saturdays & Sundays, 10:00 a.m. – 12:00 p.m.", // PLACEHOLDER
-  nearbyLandmark: "near [landmark]", // PLACEHOLDER — e.g. "near Lion Rock, Sigiriya"
+  openingHours: "By reservation — Saturdays & Sundays, 10:00 a.m. – 12:00 p.m.", // PLACEHOLDER — confirm fixed vs. by-reservation
+  nearbyLandmark: "in Kananke, Imaduwa",
 };
 
 export function whatsappLink(message: string) {
@@ -122,48 +125,56 @@ export const inclusions = [
 ];
 
 export const pricingTiers = [
-  { guests: "1 guest", pricePerPerson: 30, note: "" }, // PLACEHOLDER pricing
-  { guests: "2 guests", pricePerPerson: 28, note: "" },
-  { guests: "3–4 guests", pricePerPerson: 26, note: "" },
-  { guests: "5–8 guests", pricePerPerson: 24, note: "Ask about family & group rates" },
+  { guests: "1 guest", pricePerPerson: "15", note: "" },
+  { guests: "2 guests", pricePerPerson: "12", note: "" },
+  { guests: "3–4 guests", pricePerPerson: "10", note: "" },
+  { guests: "5–8 guests", pricePerPerson: "8–9", note: "" },
 ];
+
+export const pricingNote =
+  "Contact us for family rates, larger groups, and private experiences.";
 
 export const dishes = [
   {
-    name: "Coconut Sambol",
+    name: "Coconut Sambol (Pol Sambol)",
     description: "Fresh scraped coconut, chilli, lime, and dried fish or vegetarian alternative.",
     tags: ["Vegetarian option", "Spicy"],
     allergens: "Contains fish (optional) and coconut",
+    image: dishImages.coconutSambol,
   },
   {
     name: "Dhal Curry (Parippu)",
     description: "Red lentils simmered in coconut milk with turmeric, curry leaves, and garlic.",
     tags: ["Vegan", "Mild"],
     allergens: "Contains coconut",
+    image: dishImages.dhalCurry,
   },
   {
-    name: "Jackfruit or Chicken Curry",
-    description: "Slow-cooked in a roasted curry powder base — a vegetarian and a meat option, your choice.",
-    tags: ["Vegetarian option", "Medium"],
-    allergens: "Choose jackfruit (vegan) or chicken",
+    name: "Jackfruit Curry",
+    description: "Young jackfruit slow-cooked in a roasted curry powder base — a chicken option is also available.",
+    tags: ["Vegan", "Medium"],
+    allergens: "Ask about the chicken alternative",
+    image: dishImages.jackfruitCurry,
   },
   {
-    name: "Traditional Hoppers",
-    description: "Bowl-shaped fermented rice-and-coconut pancakes, cooked fresh over the fire.",
-    tags: ["Vegan", "Mild"],
-    allergens: "Contains rice flour and coconut",
+    name: "Egg Hoppers",
+    description: "Bowl-shaped fermented rice-and-coconut pancakes with an egg cooked into the centre.",
+    tags: ["Vegetarian", "Mild"],
+    allergens: "Contains rice flour, coconut, and egg",
+    image: dishImages.eggHoppers,
+  },
+  {
+    name: "Papadam & Fried Chilli",
+    description: "Crisp lentil papadam served with fried dried chillies — the everyday side dish.",
+    tags: ["Vegan", "Spicy"],
+    allergens: "Contains lentils",
+    image: dishImages.papadamAndChilli,
   },
   {
     name: "Beetroot Curry",
     description: "A bright, mildly sweet curry of grated beetroot tempered with mustard seed and curry leaves.",
     tags: ["Vegan", "Mild"],
     allergens: "No common allergens",
-  },
-  {
-    name: "Pol Sambol & Papadam",
-    description: "The everyday side dish — spiced fresh coconut relish served with crisp lentil papadam.",
-    tags: ["Vegan", "Medium"],
-    allergens: "Contains coconut and lentils",
   },
 ];
 

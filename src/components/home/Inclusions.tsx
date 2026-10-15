@@ -1,10 +1,11 @@
-import { CheckCircle2, Leaf } from "lucide-react";
+import Image from "next/image";
+import { CheckCircle2 } from "lucide-react";
 import Container from "../Container";
 import SectionHeading from "../SectionHeading";
 import Reveal from "../Reveal";
-import PhotoPlaceholder from "../PhotoPlaceholder";
 import Button from "../Button";
 import { inclusions, pricingTiers, whatsappLink } from "@/lib/content";
+import { bannerImages } from "@/lib/images";
 
 export default function Inclusions() {
   return (
@@ -19,12 +20,15 @@ export default function Inclusions() {
 
         <div className="mt-14 grid gap-12 lg:grid-cols-2 lg:items-center">
           <Reveal>
-            <PhotoPlaceholder
-              label="Guests scraping coconut and preparing ingredients at the kitchen pavilion"
-              icon={Leaf}
-              tone="gold"
-              className="aspect-[4/3]"
-            />
+            <div className="relative aspect-[4/3] overflow-hidden rounded-3xl">
+              <Image
+                src={bannerImages.cookingTogether}
+                alt="Guests preparing ingredients together at the Sigma House kitchen counter"
+                fill
+                sizes="(min-width: 1024px) 50vw, 100vw"
+                className="object-cover"
+              />
+            </div>
           </Reveal>
 
           <Reveal delay={0.1}>

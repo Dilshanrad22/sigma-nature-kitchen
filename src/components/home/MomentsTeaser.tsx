@@ -1,14 +1,32 @@
-import { Camera, ChefHat, Flame, Users } from "lucide-react";
+import { ChefHat } from "lucide-react";
 import Container from "../Container";
 import Reveal from "../Reveal";
 import PhotoTile from "../PhotoTile";
 import Button from "../Button";
+import { bannerImages } from "@/lib/images";
 
 const tiles = [
-  { title: "Welcome drink", subtitle: "King coconut on arrival", icon: Camera, tone: "gold" as const },
-  { title: "Spice table", subtitle: "Smell, touch, taste", icon: ChefHat, tone: "terracotta" as const },
-  { title: "Cooking over fire", subtitle: "The clay hearth", icon: Flame, tone: "forest" as const },
-  { title: "Shared meal", subtitle: "Guests at the table", icon: Users, tone: "gold" as const },
+  {
+    title: "Preparing together",
+    subtitle: "Hands-on at the counter",
+    image: bannerImages.cookingTogether,
+  },
+  {
+    title: "The kitchen pavilion",
+    subtitle: "Open-air, garden view",
+    image: bannerImages.kitchenPavilion,
+  },
+  {
+    title: "Spice table",
+    subtitle: "Smell, touch, taste",
+    icon: ChefHat,
+    tone: "terracotta" as const,
+  },
+  {
+    title: "Shared meal",
+    subtitle: "Guests at the table",
+    image: bannerImages.platedFeast,
+  },
 ];
 
 export default function MomentsTeaser() {

@@ -21,7 +21,7 @@ export default function MenuPage() {
         eyebrow="Menu & dishes"
         title="What you'll cook, season by season"
         description="The exact menu shifts with what's fresh in the garden, but it's always built around rice, curry, coconut, and fire."
-        image={bannerImages.riceBowl}
+        image={bannerImages.platedFeast}
       />
 
       <section className="bg-charcoal py-20 sm:py-28">

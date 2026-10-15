@@ -32,6 +32,7 @@ export type GalleryItem = {
   icon: keyof typeof icons;
   tone: "forest" | "terracotta" | "gold" | "charcoal";
   category: string;
+  image?: string;
 };
 
 export default function GalleryFilter({ items }: { items: GalleryItem[] }) {
@@ -76,6 +77,7 @@ export default function GalleryFilter({ items }: { items: GalleryItem[] }) {
               label={item.label}
               icon={icons[item.icon]}
               tone={item.tone}
+              image={item.image}
               className="aspect-square"
             />
           </Reveal>

@@ -37,7 +37,7 @@ export default function ReviewsPage() {
         eyebrow="Guest feedback"
         title="Reviews from our guests"
         description="Every review here will be real, permissioned, and linked back to its original source once collected."
-        image={bannerImages.beachPalms1}
+        image={bannerImages.platedFeast}
       />
 
       <section className="bg-charcoal pt-20 sm:pt-28">

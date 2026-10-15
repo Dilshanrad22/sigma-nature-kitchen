@@ -1,8 +1,8 @@
-import { Sprout } from "lucide-react";
+import Image from "next/image";
 import Container from "../Container";
 import Reveal from "../Reveal";
-import PhotoPlaceholder from "../PhotoPlaceholder";
 import Button from "../Button";
+import { bannerImages } from "@/lib/images";
 
 export default function GardenStory() {
   return (
@@ -29,12 +29,15 @@ export default function GardenStory() {
         </Reveal>
 
         <Reveal delay={0.1} className="order-1 lg:order-2">
-          <PhotoPlaceholder
-            label="Host picking curry leaves and herbs in the garden beside the kitchen"
-            icon={Sprout}
-            tone="gold"
-            className="aspect-[4/3]"
-          />
+          <div className="relative aspect-[4/3] overflow-hidden rounded-3xl">
+            <Image
+              src={bannerImages.kitchenPavilion}
+              alt="The open-air Sigma House kitchen pavilion, surrounded by tropical garden"
+              fill
+              sizes="(min-width: 1024px) 50vw, 100vw"
+              className="object-cover"
+            />
+          </div>
         </Reveal>
       </Container>
     </section>

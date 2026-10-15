@@ -30,7 +30,7 @@ export default function AboutPage() {
         eyebrow="Our story"
         title="A home kitchen, not a tourist venue"
         description="Sigma House Nature Kitchen started as a way to share real family cooking with travellers — not a staged demo, a genuine morning in the kitchen."
-        image={bannerImages.beachPalms1}
+        image={bannerImages.cookingTogether}
       />
 
       <section className="bg-charcoal py-20 sm:py-28">

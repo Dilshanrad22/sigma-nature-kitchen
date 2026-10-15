@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Camera, type LucideIcon } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -12,13 +13,34 @@ export default function PhotoPlaceholder({
   label,
   icon: Icon = Camera,
   tone = "forest",
+  image,
   className,
 }: {
   label: string;
   icon?: LucideIcon;
   tone?: keyof typeof gradients;
+  image?: string;
   className?: string;
 }) {
+  if (image) {
+    return (
+      <div
+        className={cn(
+          "relative overflow-hidden rounded-3xl",
+          className
+        )}
+      >
+        <Image
+          src={image}
+          alt={label}
+          fill
+          sizes="(min-width: 1024px) 50vw, 100vw"
+          className="object-cover"
+        />
+      </div>
+    );
+  }
+
   return (
     <div
       className={cn(

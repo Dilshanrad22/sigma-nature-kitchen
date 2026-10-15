@@ -21,7 +21,7 @@ export default function LocationPage() {
         eyebrow="Location & book"
         title={`Find us, ${business.nearbyLandmark}`}
         description={business.schedule.display}
-        image={bannerImages.beachPalms2}
+        image={bannerImages.kitchenPavilion}
       />
 
       <section className="bg-charcoal py-20 sm:py-28">

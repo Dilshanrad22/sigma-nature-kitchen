@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 export default function FaqPage() {
   return (
     <>
-      <PageHero eyebrow="FAQ" title="Frequently asked questions" image={bannerImages.spices} />
+      <PageHero eyebrow="FAQ" title="Frequently asked questions" image={bannerImages.kitchenPavilion} />
 
       <section className="bg-charcoal py-20 sm:py-28">
         <Container className="max-w-3xl">

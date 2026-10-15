@@ -4,7 +4,7 @@ import SectionHeading from "../SectionHeading";
 import Reveal from "../Reveal";
 import Button from "../Button";
 
-// Layout placeholders only — replace with real, permissioned guest reviews
+// Layout placeholders only   replace with real, permissioned guest reviews
 // before launch (see master plan: "never invent testimonials").
 const sampleReviews = [
   {
@@ -57,7 +57,7 @@ export default function GuestReviews() {
           ))}
         </div>
         <p className="mt-6 text-center text-xs text-ivory/50">
-          Placeholder layout — replace with verified, permissioned reviews before launch.
+          Placeholder layout   replace with verified, permissioned reviews before launch.
         </p>
         <div className="mt-6 text-center">
           <Button href="/reviews" variant="ghost">

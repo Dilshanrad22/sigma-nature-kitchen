@@ -18,7 +18,7 @@ export default function GardenStory() {
           <p className="mt-4 text-balance text-base leading-relaxed text-ivory/65 sm:text-lg">
             Curry leaves, chillies, and herbs come straight from the garden
             beside the kitchen. What we don&rsquo;t grow ourselves, we source
-            from neighbours in the village — we&rsquo;ll always tell you which
+            from neighbours in the village   we&rsquo;ll always tell you which
             is which.
           </p>
           <div className="mt-6">

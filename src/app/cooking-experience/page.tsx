@@ -18,7 +18,7 @@ export default function CookingExperiencePage() {
       <PageHero
         eyebrow="The experience"
         title="A full afternoon of hands-on cooking"
-        description="No spectator seats — every guest cooks alongside their host, from grinding spices to plating the final meal."
+        description="No spectator seats   every guest cooks alongside their host, from grinding spices to plating the final meal."
         image={bannerImages.cookingTogether}
       />
       <JourneyTimeline />

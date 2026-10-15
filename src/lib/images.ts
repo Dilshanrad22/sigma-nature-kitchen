@@ -9,7 +9,7 @@ export const bannerImages = {
 };
 
 export const hostImages = {
-  // This is actually a group photo (host + guests), not a solo portrait —
+  // This is actually a group photo (host + guests), not a solo portrait  
   // captioned accordingly wherever it's used.
   hostWithGuests: encodeURI("/Portrait of host.jpeg"),
   takeHomeRecipeCard: "/about_page/tack_home_recipy01.jpeg",
@@ -26,7 +26,7 @@ export const heroSlides = [
 ];
 
 // Beetroot Curry's uploaded photo ("bitroot.jpeg") actually shows egg
-// hoppers, not beetroot curry — likely a mislabeled upload. Not wired in
+// hoppers, not beetroot curry   likely a mislabeled upload. Not wired in
 // anywhere; replace with a correct photo and add it to dishImages below.
 
 export const galleryImages = {

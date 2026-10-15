@@ -159,7 +159,7 @@ export default function EnquiryForm() {
         <Send size={16} />
       </button>
       <p className="text-xs text-ivory/50">
-        This opens WhatsApp with your details filled in — nothing is sent
+        This opens WhatsApp with your details filled in   nothing is sent
         automatically. Your host, {business.name}, will confirm availability
         and final price directly.
       </p>

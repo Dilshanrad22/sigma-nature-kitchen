@@ -11,7 +11,7 @@ import { bannerImages } from "@/lib/images";
 export const metadata: Metadata = {
   title: "For Groups & Private Classes | Sigma House Nature Kitchen",
   description:
-    "Private cooking classes for couples, families, small groups, and travel agents — tailored to your group's size and interests.",
+    "Private cooking classes for couples, families, small groups, and travel agents   tailored to your group's size and interests.",
 };
 
 const groupTypes = [
@@ -28,7 +28,7 @@ const groupTypes = [
   {
     icon: Users2,
     title: "Small groups",
-    description: "Friends travelling together — up to 8 guests per session, cooking as one group.",
+    description: "Friends travelling together   up to 8 guests per session, cooking as one group.",
   },
   {
     icon: Plane,
@@ -43,7 +43,7 @@ export default function GroupsPage() {
       <PageHero
         eyebrow="For groups & private classes"
         title="Tailored sessions for every kind of traveller"
-        description="Tell us your group size and interests — we'll confirm what's possible and the right price for your group."
+        description="Tell us your group size and interests   we'll confirm what's possible and the right price for your group."
         image={bannerImages.cookingTogether}
       />
 

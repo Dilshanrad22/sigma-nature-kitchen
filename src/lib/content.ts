@@ -1,5 +1,5 @@
 // ---------------------------------------------------------------------------
-// SITE CONTENT — single source of truth for editable facts.
+// SITE CONTENT   single source of truth for editable facts.
 // Everything marked "PLACEHOLDER" is an example value from the brief and
 // MUST be confirmed with the real business details before launch
 // (see master plan §13 "Facts to confirm before development").
@@ -22,9 +22,9 @@ export const business = {
   sisterSiteName: "Sigma House Sri Lanka",
   schedule: {
     display: "Saturdays & Sundays, 10:00 a.m. – 12:00 p.m. (by reservation)",
-    note: "Sessions run by reservation — confirm your date before you travel.",
+    note: "Sessions run by reservation   confirm your date before you travel.",
   },
-  openingHours: "By reservation — Saturdays & Sundays, 10:00 a.m. – 12:00 p.m.", // PLACEHOLDER — confirm fixed vs. by-reservation
+  openingHours: "By reservation   Saturdays & Sundays, 10:00 a.m. – 12:00 p.m.", // PLACEHOLDER   confirm fixed vs. by-reservation
   nearbyLandmark: "in Kananke, Imaduwa",
 };
 
@@ -42,7 +42,7 @@ export const nav = [
   { href: "/location", label: "Contact" },
 ];
 
-// Pages that exist but live outside the main nav — reachable from the
+// Pages that exist but live outside the main nav   reachable from the
 // footer and from in-page links (e.g. "See the full menu" buttons).
 export const secondaryPages = [
   { href: "/menu", label: "Menu & Dishes" },
@@ -69,7 +69,7 @@ export const promises = [
   {
     title: "Learn",
     description:
-      "Understand the why behind each dish — spice pairing, coconut milk, and techniques passed down through generations.",
+      "Understand the why behind each dish   spice pairing, coconut milk, and techniques passed down through generations.",
     icon: "BookOpen",
   },
   {
@@ -97,7 +97,7 @@ export const journeySteps = [
     step: "03",
     title: "Prepare Together",
     description:
-      "Scrape coconut, grind a tempered curry paste, and prep vegetables the traditional way — hands-on, start to finish.",
+      "Scrape coconut, grind a tempered curry paste, and prep vegetables the traditional way   hands-on, start to finish.",
   },
   {
     step: "04",
@@ -109,7 +109,7 @@ export const journeySteps = [
     step: "05",
     title: "Sit Down & Enjoy",
     description:
-      "Share the meal you made together at the garden table — the best part of the whole experience.",
+      "Share the meal you made together at the garden table   the best part of the whole experience.",
   },
 ];
 
@@ -151,7 +151,7 @@ export const dishes = [
   },
   {
     name: "Jackfruit Curry",
-    description: "Young jackfruit slow-cooked in a roasted curry powder base — a chicken option is also available.",
+    description: "Young jackfruit slow-cooked in a roasted curry powder base   a chicken option is also available.",
     tags: ["Vegan", "Medium"],
     allergens: "Ask about the chicken alternative",
     image: dishImages.jackfruitCurry,
@@ -165,7 +165,7 @@ export const dishes = [
   },
   {
     name: "Papadam & Fried Chilli",
-    description: "Crisp lentil papadam served with fried dried chillies — the everyday side dish.",
+    description: "Crisp lentil papadam served with fried dried chillies   the everyday side dish.",
     tags: ["Vegan", "Spicy"],
     allergens: "Contains lentils",
     image: dishImages.papadamAndChilli,
@@ -187,7 +187,7 @@ export const faqs = [
   {
     question: "Is it suitable for vegetarians or vegans?",
     answer:
-      "Yes — tell us your dietary needs when you reserve and we'll adjust the menu accordingly.",
+      "Yes   tell us your dietary needs when you reserve and we'll adjust the menu accordingly.",
   },
   {
     question: "Can children join?",
@@ -197,7 +197,7 @@ export const faqs = [
   {
     question: "Do you offer transport?",
     answer:
-      "Ask us on WhatsApp — transport availability depends on your location and group size.",
+      "Ask us on WhatsApp   transport availability depends on your location and group size.",
   },
   {
     question: "Is the schedule fixed?",
@@ -212,9 +212,9 @@ export const faqs = [
 
 export const policies = {
   cancellation:
-    "Full refund for cancellations made at least 48 hours before your session. Within 48 hours, the deposit is non-refundable. PLACEHOLDER — confirm final terms before publishing.",
+    "Full refund for cancellations made at least 48 hours before your session. Within 48 hours, the deposit is non-refundable. PLACEHOLDER   confirm final terms before publishing.",
   lateArrival:
-    "Please arrive on time — sessions begin promptly as ingredients are prepared in advance. Let us know on WhatsApp if you expect to be delayed.",
+    "Please arrive on time   sessions begin promptly as ingredients are prepared in advance. Let us know on WhatsApp if you expect to be delayed.",
   dietary:
     "Tell us about allergies or dietary needs when you reserve. We accommodate vegetarian and vegan guests; please confirm other allergies directly as not all ingredients can be substituted.",
   children:

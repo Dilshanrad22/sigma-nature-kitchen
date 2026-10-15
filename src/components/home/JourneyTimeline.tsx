@@ -10,7 +10,7 @@ export default function JourneyTimeline() {
         <SectionHeading
           eyebrow="How it works"
           title="Your experience, step by step"
-          description="From welcome drink to shared meal — every step is hands-on, guided, and unhurried."
+          description="From welcome drink to shared meal   every step is hands-on, guided, and unhurried."
         />
 
         <div className="relative mt-16">

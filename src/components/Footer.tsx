@@ -16,7 +16,7 @@ export default function Footer() {
           <p className="font-display text-2xl">Sigma House</p>
           <p className="text-sm text-gold-light">Nature Kitchen</p>
           <p className="mt-4 max-w-xs text-sm text-ivory/75">
-            A hands-on Sri Lankan village cooking experience — cook, learn, and
+            A hands-on Sri Lankan village cooking experience   cook, learn, and
             taste together.
           </p>
           <a

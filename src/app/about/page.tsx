@@ -12,7 +12,7 @@ import { bannerImages, hostImages } from "@/lib/images";
 export const metadata: Metadata = {
   title: "About | Sigma House Nature Kitchen",
   description:
-    "The story behind Sigma House Nature Kitchen — a small, hands-on Sri Lankan cooking experience hosted at home, not at a tourist venue.",
+    "The story behind Sigma House Nature Kitchen   a small, hands-on Sri Lankan cooking experience hosted at home, not at a tourist venue.",
 };
 
 const highlights = [
@@ -28,7 +28,7 @@ export default function AboutPage() {
       <PageHero
         eyebrow="Our story"
         title="A home kitchen, not a tourist venue"
-        description="Sigma House Nature Kitchen started as a way to share real family cooking with travellers — not a staged demo, a genuine morning in the kitchen."
+        description="Sigma House Nature Kitchen started as a way to share real family cooking with travellers   not a staged demo, a genuine morning in the kitchen."
         image={bannerImages.cookingTogether}
       />
 
@@ -45,7 +45,7 @@ export default function AboutPage() {
               Everything you cook with us comes from recipes passed down
               through the family, made with ingredients picked the same
               morning where possible. There&rsquo;s no script and no
-              performance — just a kitchen, a fire, and time to cook
+              performance   just a kitchen, a fire, and time to cook
               properly.
             </p>
             <div className="mt-6 flex flex-wrap gap-4">
@@ -85,7 +85,7 @@ export default function AboutPage() {
               A 2.5–3 hour hands-on class
             </h2>
             <p className="mt-4 text-ivory/65">
-              Rice, two or three curries, a sambol, and dessert — all cooked
+              Rice, two or three curries, a sambol, and dessert   all cooked
               from scratch over an open fire, with spices introduced along
               the way.
             </p>

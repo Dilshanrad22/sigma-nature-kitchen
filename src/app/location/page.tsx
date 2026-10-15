@@ -89,7 +89,7 @@ export default function LocationPage() {
                 Request a booking
               </h2>
               <p className="mt-2 text-sm text-ivory/60">
-                This sends your details straight to us on WhatsApp — we&rsquo;ll
+                This sends your details straight to us on WhatsApp   we&rsquo;ll
                 confirm availability, final price, and the meeting point.
               </p>
               <div className="mt-6">

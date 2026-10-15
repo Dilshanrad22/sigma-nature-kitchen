@@ -11,7 +11,7 @@ import { bannerImages } from "@/lib/images";
 export const metadata: Metadata = {
   title: "Garden to Kitchen | Sigma House Nature Kitchen",
   description:
-    "Curry leaves, chillies, and herbs grown steps from the kitchen — see what comes from the garden and what's sourced from the village.",
+    "Curry leaves, chillies, and herbs grown steps from the kitchen   see what comes from the garden and what's sourced from the village.",
 };
 
 const ingredients = [
@@ -38,7 +38,7 @@ export default function GardenToKitchenPage() {
       <PageHero
         eyebrow="Garden to kitchen"
         title="Grown steps away, cooked the same day"
-        description="We'll always tell you which ingredients came from our own garden and which were sourced locally — no unverified claims, just what's true."
+        description="We'll always tell you which ingredients came from our own garden and which were sourced locally   no unverified claims, just what's true."
         image={bannerImages.kitchenPavilion}
       />
 
@@ -70,7 +70,7 @@ export default function GardenToKitchenPage() {
 
           <Reveal delay={0.2} className="mx-auto mt-12 max-w-2xl text-center text-sm text-ivory/55">
             We avoid making organic or sustainability claims we can&rsquo;t
-            prove. What we can promise is freshness — most herbs and
+            prove. What we can promise is freshness   most herbs and
             vegetables are picked the same morning you cook with them.
           </Reveal>
         </Container>

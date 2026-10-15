@@ -7,7 +7,7 @@ import { whatsappLink } from "@/lib/content";
 
 const reasons = [
   { title: "Small groups, every time", description: "Capped guest numbers so every session stays genuinely hands-on." },
-  { title: "Cooked, not just watched", description: "You grind, scrape, and stir — your host guides rather than performs." },
+  { title: "Cooked, not just watched", description: "You grind, scrape, and stir   your host guides rather than performs." },
   { title: "Open-fire cooking", description: "Traditional clay-hearth technique, not a gas-stove demo." },
   { title: "Garden-fresh ingredients", description: "Herbs and vegetables picked the same morning where possible." },
   { title: "Dietary needs welcomed", description: "Vegetarian and vegan guests accommodated with notice." },

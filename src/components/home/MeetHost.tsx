@@ -24,7 +24,7 @@ export default function MeetHost() {
             Cooking taught the way it was taught to us
           </h2>
           <p className="mt-4 text-balance text-base leading-relaxed text-ivory/65 sm:text-lg">
-            Host bio placeholder — a short, honest introduction to who leads
+            Host bio placeholder   a short, honest introduction to who leads
             the kitchen, how long they&rsquo;ve been cooking this way, and
             what guests can expect from spending a morning with them.
           </p>

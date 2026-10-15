@@ -11,7 +11,7 @@ import { bannerImages } from "@/lib/images";
 export const metadata: Metadata = {
   title: "Menu & Dishes | Sigma House Nature Kitchen",
   description:
-    "Seasonal Sri Lankan dishes you'll cook by hand — with vegetarian, vegan, and spice-level guidance.",
+    "Seasonal Sri Lankan dishes you'll cook by hand   with vegetarian, vegan, and spice-level guidance.",
 };
 
 export default function MenuPage() {
@@ -31,7 +31,7 @@ export default function MenuPage() {
             <p>
               Let us know about allergies or dietary needs when you reserve.
               We can adapt most dishes to vegetarian or vegan, but not every
-              ingredient has a substitute — please confirm serious allergies
+              ingredient has a substitute   please confirm serious allergies
               directly with your host.
             </p>
           </Reveal>

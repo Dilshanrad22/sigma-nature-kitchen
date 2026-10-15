@@ -12,17 +12,17 @@ export const metadata: Metadata = {
   description: "Guest reviews from the Sigma House Nature Kitchen cooking experience.",
 };
 
-// Platform cards — wire up to real profiles and real ratings once the
+// Platform cards   wire up to real profiles and real ratings once the
 // business has them. Do not fill in numbers that aren't verified.
 const platforms = [
-  { name: "Google", rating: "—", count: "Not yet listed", url: "#" },
-  { name: "TripAdvisor", rating: "—", count: "Not yet listed", url: "#" },
-  { name: "Facebook", rating: "—", count: "Not yet listed", url: "#" },
+  { name: "Google", rating: " ", count: "Not yet listed", url: "#" },
+  { name: "TripAdvisor", rating: " ", count: "Not yet listed", url: "#" },
+  { name: "Facebook", rating: " ", count: "Not yet listed", url: "#" },
 ];
 
 // Layout placeholders only. Replace every entry with a real, permissioned
 // review and link back to its original platform before this page goes
-// live — never publish invented testimonials.
+// live   never publish invented testimonials.
 const placeholderReviews = Array.from({ length: 6 }).map((_, i) => ({
   name: `Guest name ${i + 1} (sample)`,
   location: "Country (sample)",

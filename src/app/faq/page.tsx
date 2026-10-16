@@ -19,7 +19,7 @@ export default function FaqPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={jsonLdScript(faqJsonLd)} />
-      <PageHero eyebrow="FAQ" title="Sri Lankan cooking class FAQ" image={bannerImages.kitchenPavilion} />
+      <PageHero eyebrow="FAQ" title="Frequently asked questions" image={bannerImages.kitchenPavilion} />
 
       <section className="bg-charcoal py-20 sm:py-28">
         <Container className="max-w-3xl">

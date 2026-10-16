@@ -34,7 +34,7 @@ export default function GalleryPage() {
     <>
       <PageHero
         eyebrow="Gallery"
-        title="Photos from our Sri Lankan cooking class"
+        title="Moments from the kitchen"
         description="Real photos from real sessions at Sigma House Nature Kitchen."
         image={bannerImages.kitchenPavilion}
       />

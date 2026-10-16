@@ -12,7 +12,7 @@ export default function SignatureDishes() {
       <Container>
         <SectionHeading
           eyebrow="On the table"
-          title="Signature Sri Lankan dishes you'll cook"
+          title="Signature dishes you'll cook"
           description="A rotating, seasonal menu built around what's fresh in the garden   every dish made from scratch, with you."
         />
 

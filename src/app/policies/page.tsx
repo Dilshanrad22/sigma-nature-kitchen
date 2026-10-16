@@ -23,7 +23,7 @@ const sections = [
 export default function PoliciesPage() {
   return (
     <>
-      <PageHero eyebrow="Policies" title="Booking & cancellation policies" />
+      <PageHero eyebrow="Policies" title="Policies & good-to-knows" />
 
       <section className="bg-charcoal py-20 sm:py-28">
         <Container className="max-w-3xl space-y-8">

@@ -9,7 +9,7 @@ export default function JourneyTimeline() {
       <Container>
         <SectionHeading
           eyebrow="How it works"
-          title="Your cooking class, step by step"
+          title="Your experience, step by step"
           description="From welcome drink to shared meal   every step is hands-on, guided, and unhurried."
         />
 

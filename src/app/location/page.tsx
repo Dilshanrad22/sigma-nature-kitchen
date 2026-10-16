@@ -23,7 +23,7 @@ export default function LocationPage() {
     <>
       <PageHero
         eyebrow="Location & book"
-        title="Book a cooking class in Kananke, near Galle"
+        title={`Find us, ${business.nearbyLandmark}`}
         description={business.schedule.display}
         image={bannerImages.kitchenPavilion}
       />

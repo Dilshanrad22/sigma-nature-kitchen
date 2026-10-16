@@ -8,24 +8,15 @@ import type { Metadata } from "next";
 import { business, faqs } from "./content";
 import { bannerImages } from "./images";
 
-// Site URL for canonical URLs, sitemap.xml and social previews. No custom
-// domain yet: set NEXT_PUBLIC_SITE_URL once there is one. Until then Vercel's
-// production URL is used, and localhost for local builds.
+// Production domain for canonical URLs, sitemap.xml and social previews.
+// NEXT_PUBLIC_SITE_URL overrides it (e.g. for a preview deployment).
 //
 // Keyword split with the main Sigma House Sri Lanka site: this site targets
 // cooking-class searches only. Stay, homestay and general village-experience
 // searches belong to the main site.
 export const siteUrl = (
-  process.env.NEXT_PUBLIC_SITE_URL ??
-  (process.env.VERCEL_PROJECT_PRODUCTION_URL
-    ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
-    : "http://localhost:3000")
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://naturekitchen.sigmahousesl.com"
 ).replace(/\/$/, "");
-// The main site, linked as the parent brand in structured data.
-export const mainSiteUrl = (
-  process.env.NEXT_PUBLIC_MAIN_SITE_URL ?? business.sisterSiteUrl
-).replace(/\/$/, "");
-
 export const defaultDescription =
   "Authentic Sri Lankan cooking class with a local family in Kananke, near Galle. Learn local spices, cook rice and curry over an open fire and share a real taste of village life.";
 
@@ -175,12 +166,6 @@ export const localBusinessJsonLd = {
     },
   ],
   sameAs: [business.instagram, business.facebook],
-  parentOrganization: {
-    "@type": "Organization",
-    "@id": `${mainSiteUrl}/#business`,
-    name: business.sisterSiteName,
-    url: mainSiteUrl,
-  },
   knowsLanguage: "en",
 };
 

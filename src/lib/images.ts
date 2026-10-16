@@ -25,6 +25,13 @@ export const heroSlides = [
   bannerImages.platedFeast,
 ];
 
+export const heroSlideAlts = [
+  "Guests cooking together at the Sigma House Nature Kitchen counter",
+  "Cooking Sri Lankan curry over an open fire at Sigma House Nature Kitchen",
+  "The open-air Nature Kitchen pavilion in the garden",
+  "Clay-pot Sri Lankan rice and curry spread cooked in the class",
+];
+
 export const galleryImages = {
   welcomeKingCoconut: encodeURI("/gallery/wellcome_king coconut.jpeg"),
   meetingYourHost: encodeURI("/gallery/meet your host.jpeg"),

@@ -54,7 +54,7 @@ export const secondaryPages = [
 export const heroCopy = {
   eyebrow: "Learn · Cook · Taste · Enjoy",
   headline: "Taste Sri Lanka. Live the Village.",
-  sub: "Join a hands-on Sri Lankan village cooking experience with local ingredients, traditional techniques, and a meal you help create.",
+  sub: "Taste Sri Lanka. Live the Village. Join a hands-on village cooking class in Kananke, near Galle, with local ingredients, traditional techniques and a meal you help create.",
   primaryCta: "Reserve Your Experience",
   secondaryCta: "See How It Works",
 };

@@ -39,7 +39,7 @@ export default function GardenToKitchenPage() {
     <>
       <PageHero
         eyebrow="Garden to kitchen"
-        title="Grown steps away, cooked the same day"
+        title="Garden to kitchen: Sri Lankan spices & ingredients"
         description="We'll always tell you which ingredients came from our own garden and which were sourced locally   no unverified claims, just what's true."
         image={bannerImages.kitchenPavilion}
       />

@@ -20,7 +20,7 @@ export default function CookingExperiencePage() {
     <>
       <PageHero
         eyebrow="The experience"
-        title="A full afternoon of hands-on cooking"
+        title="Hands-on Sri Lankan village cooking experience"
         description="No spectator seats   every guest cooks alongside their host, from grinding spices to plating the final meal."
         image={bannerImages.cookingTogether}
       />

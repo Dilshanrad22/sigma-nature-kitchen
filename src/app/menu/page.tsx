@@ -22,7 +22,7 @@ export default function MenuPage() {
     <>
       <PageHero
         eyebrow="Menu & dishes"
-        title="What you'll cook, season by season"
+        title="Traditional Sri Lankan dishes you'll cook"
         description="The exact menu shifts with what's fresh in the garden, but it's always built around rice, curry, coconut, and fire."
         image={bannerImages.platedFeast}
       />

@@ -45,7 +45,7 @@ export default function GroupsPage() {
     <>
       <PageHero
         eyebrow="For groups & private classes"
-        title="Tailored sessions for every kind of traveller"
+        title="Private Sri Lankan cooking classes for groups & families"
         description="Tell us your group size and interests   we'll confirm what's possible and the right price for your group."
         image={bannerImages.cookingTogether}
       />

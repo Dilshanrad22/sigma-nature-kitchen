@@ -7,7 +7,7 @@ import { ArrowRight, ChefHat, ChevronLeft, ChevronRight, Globe2, Leaf, Users } f
 import Container from "../Container";
 import Button from "../Button";
 import { heroCopy, whatsappLink } from "@/lib/content";
-import { heroSlides as slides } from "@/lib/images";
+import { heroSlideAlts, heroSlides as slides } from "@/lib/images";
 
 export default function Hero() {
   const [index, setIndex] = useState(0);
@@ -32,7 +32,7 @@ export default function Hero() {
         >
           <Image
             src={slides[index]}
-            alt=""
+            alt={heroSlideAlts[index]}
             fill
             priority={index === 0}
             sizes="100vw"
@@ -62,9 +62,9 @@ export default function Hero() {
           transition={{ duration: 0.7, delay: 0.1 }}
           className="font-display text-balance text-4xl leading-tight sm:text-6xl lg:text-7xl"
         >
-          <span className="text-ivory">Taste Sri Lanka.</span>
+          <span className="text-ivory">Authentic Sri Lankan Cooking Class</span>
           <br />
-          <span className="text-gold-light">Live the Village.</span>
+          <span className="text-gold-light">with a Local Family</span>
         </motion.h1>
 
         <motion.p

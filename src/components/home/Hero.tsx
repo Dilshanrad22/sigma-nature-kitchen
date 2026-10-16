@@ -62,9 +62,9 @@ export default function Hero() {
           transition={{ duration: 0.7, delay: 0.1 }}
           className="font-display text-balance text-4xl leading-tight sm:text-6xl lg:text-7xl"
         >
-          <span className="text-ivory">Authentic Sri Lankan Cooking Class</span>
+          <span className="text-ivory">Taste Sri Lanka.</span>
           <br />
-          <span className="text-gold-light">with a Local Family</span>
+          <span className="text-gold-light">Live the Village.</span>
         </motion.h1>
 
         <motion.p
